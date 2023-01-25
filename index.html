@@ -1,0 +1,136 @@
+<!-- Es la versión que versión de html vamos a usar. -->
+<!DOCTYPE html>
+<!-- 
+-las etiquetas especifican el tipo de elemento que se va a crear
+-etiqueta en inglés se dice "Tag"
+-para abrir una etiqueta ponemos <html>
+-para cerrar una etique usamos </html> o el nombre de la etiqueta equivalent -->
+
+<!-- head es la cabeza y body es el cuerpo -->
+
+<html lang="es">
+  <head>
+    <title>Código de Myller</title>
+
+    <!--la etiqueta link perimite conectar archivos entres si, como html y css-->
+    <link href="style.css" rel="stylesheet">
+
+    <!--con la eqiqueta stryle se puede personalizar la página pero solo parrafo por parrafo, o titulo por título-->
+    <!--
+    <style>
+      h2{
+        color:rgb(74, 26, 118)
+      }
+
+      h3{
+        color: green;
+      }
+
+      p{
+        color:brown;
+      }
+    </style>-->
+
+    
+  </head>
+  <body>
+    <!--Este codigo se le denomina, estilo en línea, con el se puede personalizar un linea de la página -->
+   <!---- <h2 style="color: rgb(82, 82, 255)"> APP DE PERROS</h2>-->
+    <h2 id="titulo"><strong>APP DE PERROS</h2></strong>
+    <main>
+        <h3> Imágenes de perros</h3>
+        <!-- el h mas el numero indica el tamaño que se le va a dar a el texto 
+           el codigo P se utiliza para agregar un parar-->
+
+        <P> Haz click aquí para ver más <a href="https://blog.mascotaysalud.com/razas-perros/grandes/" target="_blank" rel="noopener noreferrer">imágenes de perros.</a></P>
+        <!-- la etiqueta no sirve para crear un enlace-->
+        <!-- rel, nos permite protegernos de ataques-->
+        <!-- Target, hace que el link se habra en una pestaña diferente-->
+
+        <a href="#parrafo1"> Párrafo 1</a>
+        <a href="#parrafo2"> Párrafo 2<br></a><hr><hr> <br>
+        <!-- para creal un link interno se usa la etiqueta href-->
+        <!-- se usa la etiqueta id para conectar un link interno a un texto que queremos ir-->
+
+        <a  href="https://blog.mascotaysalud.com/razas-perros/grandes/labrador-retriever/" target="_blank"><img src="https://i0.wp.com/blog.mascotaysalud.com/wp-content/uploads/2019/09/LABRADOR-RETRIEVER-TUMBADO.jpg?w=865&ssl=1"Alt="Un hermoso perro corriendo y saltando feliz en la grama verde "></a>
+        <!-- para convertir una imagen en un enlace solo ponemos las etiquetas "a" y "href" entre la etiqueta "img", mas el link a donde quiere que nos lleve ese enclace-->
+
+        <hr>
+        <!--la etiqueta "hr" se usa para agregar una linea horizontal-->
+
+       <h3>Listas de perros</h3>
+
+       <div>
+
+       <p>Cosas que los perros <em> aman</em></p>
+       <!--la etiqueta "strong sirve para poner en negrita un texto"-->
+
+       <ul class="lista">
+        <li>jugar</li>
+        <li>Carisias</li>
+        <li>Buscar la pelota</li>
+       </ul>
+       <!--la eiquete "lu" sirve para crear una lista de texto no ordena, es decir, el texto aparece solo con viñetas-->
+       <!--la etiqueta "li" sirve para escribir el texto dentro de la lista-->
+
+      
+      <!--div, Es un contenedor muy utilizado-->
+
+       <img src="perro buscando pelota.jpg" alt="Un perro corriendo detras de un pelota">
+
+       <p>Cosas que los perros <strong>odian:</p></strong>
+       <!--la etiqueta "strong sirve para poner en negrita un texto"-->
+
+       
+       <!--la clase se utiliza para aplicarle un cambio a todos las variables que se encuentren con ese nombre -->
+       <ol class="lista">
+        <li>Tratamiento antipulgas</li>
+        <li><s>El agua fria</s></li>
+        <!--la etiqueta "S" sirve para tachar un texto-->
+        <li>El sonido de la polvora</li>  
+       </ol>
+      </div>
+       
+
+       <!--la eiquete "ol" sirve para crear una lista de texto Ordena, es decir, de forma enumerada-->
+       <div id="d1">
+       <img id="perro-polvora" src="Perros polvora.jpg"  alt="Un perro asustado por el sonido de la polvora">
+      </div>
+
+        <h3 id="parrafo1"> Párrafo 1</h3>
+        <p> Este es el texto que pertenece al Párrafo numero uno de la pagina web</p>
+
+        <h3 id="parrafo2"> Párrafo 2</h3>
+        <p> Este es el texto que pertenece al Párrafo numero dos de la pagina web</p><hr>
+
+        <form action="/enviarespuesta.txt">
+
+          <label for="interior"><input id="interior" type="radio"
+            value="interior" name="interior-exterior" checked>interior</label><br>
+
+            <label for="exterior"><input id="exterior" type="radio" value="exterior"
+              name="interior-exterior">exterior</label><br><br>
+
+              <!--casilla de verificación es el codigo que esta debajo de este comentario-->
+
+              <label for="carinoso"></label><input type="checkbox" value="carinoso" name="personalidad" checked>carinoso</label><br>
+              <label for="energico"><input type="checkbox" value="energico" name="personalidad">Enérgico</label><br>
+              <label for="perezoso"></label><input type="checkbox" value="perezoso" name="personalidad">Perezoso</label><br>
+
+          <input type="text" placeholder="URL de la foto de tu perro" required>
+          <br> <br>  <button type="submit"> enviar</button>
+        </form><hr>
+        
+
+       
+        <!-- Form, se usa para crear un formulario o un campo de texto-->
+        <!--placeholder, sirve para decir que tipo de datos deben escribir en el formulario, pero al momento de que el usuario escriba, esta texto informativo desaparece-->
+        <!--Required, sirve par hacer que un campo sea obligatorio-->
+
+    </main>
+    <footer>
+      <p><small>Derechos de autor - <a href="https://sites.google.com/view/codigo-de-myller/inicio
+        " target="_blank">Codigodemyller.com</a></small></p>
+    </footer>
+  </body>
+</html>

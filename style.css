@@ -1,0 +1,29 @@
+img[alt]{
+    
+    margin: 5px 30px;
+    padding: 5px;
+    width: 500px;
+    border-width: 2px;
+    border-color:black;
+    border-style: double;
+    border-radius: 60px;
+    background-color: aqua;
+}
+
+div{
+    background-color: antiquewhite;
+}
+
+
+#titulo{
+    font-size: 30px;
+    color: green;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+a[href="https://sites.google.com/view/codigo-de-myller/inicio"]{
+    color: greenyellow;
+    text-decoration: none;
+    font-weight: bold;
+
+}
